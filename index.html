@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CampusGO | The Kinetic Hearth</title>
+<link rel="icon" type="image/png" href="images/logo no background.png" style="border-radius: 20px;">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "secondary-fixed": "#dee1f8",
+                "on-secondary-fixed-variant": "#575b6d",
+                "error-dim": "#9f0519",
+                "on-surface-variant": "#834c4b",
+                "on-background": "#4e2120",
+                "on-error": "#ffefee",
+                "surface-dim": "#ffc7c4",
+                "surface-container-lowest": "#ffffff",
+                "on-surface": "#4e2120",
+                "on-tertiary": "#ffedfe",
+                "secondary": "#575b6d",
+                "background": "#fff4f3",
+                "on-tertiary-fixed": "#360049",
+                "inverse-primary": "#ff5622",
+                "outline": "#a26765",
+                "surface-container": "#ffe1e0",
+                "on-tertiary-fixed-variant": "#611b79",
+                "surface-container-highest": "#ffd2d0",
+                "on-secondary-fixed": "#3b3f50",
+                "on-primary-fixed-variant": "#581200",
+                "surface-tint": "#ab2d00",
+                "on-primary-container": "#480d00",
+                "secondary-container": "#dee1f8",
+                "on-secondary-container": "#4d5163",
+                "surface-container-high": "#ffdad8",
+                "tertiary-fixed-dim": "#d78cee",
+                "primary-container": "#ff7851",
+                "tertiary-dim": "#75318d",
+                "error": "#b31b25",
+                "on-error-container": "#570008",
+                "tertiary-fixed": "#e699fd",
+                "error-container": "#fb5151",
+                "surface-bright": "#fff4f3",
+                "primary-fixed-dim": "#ff5d2c",
+                "on-primary": "#ffefec",
+                "surface-variant": "#ffd2d0",
+                "surface-container-low": "#ffedeb",
+                "on-primary-fixed": "#000000",
+                "on-secondary": "#f2f2ff",
+                "tertiary": "#833e9a",
+                "primary-fixed": "#ff7851",
+                "inverse-surface": "#240304",
+                "secondary-dim": "#4b4f61",
+                "primary": "#ab2d00",
+                "outline-variant": "#e09c99",
+                "surface": "#fff4f3",
+                "on-tertiary-container": "#570e70",
+                "inverse-on-surface": "#ce8c89",
+                "tertiary-container": "#e699fd",
+                "secondary-fixed-dim": "#d0d3e9",
+                "primary-dim": "#962600"
+              },
+              fontFamily: {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-plate {
+            background: rgba(255, 244, 243, 0.8);
+            backdrop-filter: blur(24px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #ab2d00 0%, #ff7851 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="w-full top-0 left-0 bg-[#fff4f3] dark:bg-[#1a0b0a] sticky z-50">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<img alt="CampusGo Logo" class="h-12 w-auto object-contain" src="images/logo-removebg-preview.png"/>
+<div class="text-2xl font-black text-[#ab2d00] dark:text-[#ff7851] tracking-tighter font-headline">
+                    CampusGo
+                </div>
+</div>
+<!-- <div class="hidden md:flex items-center space-x-12 font-headline font-bold tracking-tight">
+<a class="text-[#ab2d00] dark:text-[#ff7851] border-b-2 border-[#ab2d00] hover:text-[#ab2d00] transition-colors duration-200" href="#">Students</a>
+<a class="text-[#4e2120] dark:text-[#efdfde] opacity-80 hover:text-[#ab2d00] transition-colors duration-200" href="#">Vendors</a>
+<a class="text-[#4e2120] dark:text-[#efdfde] opacity-80 hover:text-[#ab2d00] transition-colors duration-200" href="#">Riders</a>
+</div> -->
+<button class="primary-gradient text-on-primary px-8 py-3 rounded-full font-headline font-bold scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/20">
+                Get Started
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative px-8 pt-12 pb-24 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 bg-surface-container-high px-4 py-2 rounded-full text-primary font-bold text-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+                        Campus Dining Evolved
+                    </div>
+<h1 class="font-headline font-extrabold text-6xl md:text-8xl text-on-background leading-[0.9] tracking-tighter">
+                        The Culinary <span class="text-primary italic">Pulse</span> of Your Campus
+                    </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-xl font-medium leading-relaxed">
+                        Fuel your hustle with local flavors delivered to your dorm, library, or lecture hall. Fast, reliable, and made for students.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="primary-gradient text-on-primary px-10 py-5 rounded-full font-headline font-bold text-xl shadow-xl shadow-primary/30 flex items-center gap-3 group">
+                            Start Ordering
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high text-primary px-10 py-5 rounded-full font-headline font-bold text-xl hover:bg-surface-container-highest transition-colors">
+                            Explore Menu
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative z-10 rounded-[3rem] overflow-hidden rotate-2 shadow-2xl">
+<img class="w-full aspect-[4/5] object-cover" data-alt="diverse group of college students laughing and sharing various street food containers in a vibrant outdoor campus quad with sun flares" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7hX3s3VzZLzUl3gwauZ6kndwO4qntWDCM23aGb0CCkuNClzrkFXGWOQcxitDz-qM2YrPAX2AkAwJmLeXFqtm9uB-FvtsN-sHUdKI6gHb3Hi8PvTSlO4L41aK8VFuYFMBRQGounTTnwCgUE4oXS7Cev-Bmr-gKJohEa9LHxUCLbZrvZ9oze4SWaYplPHDEW46TYM4GcZgrAznvQUZbPYnSSDGuAkTOVYR_yL-_3Qp9JXT8XcXhBJgWm7yWo9jwGVAWcBM45Xg6hHo"/>
+</div>
+<div class="absolute -bottom-8 -left-8 glass-plate p-6 rounded-2xl shadow-xl z-20 max-w-[240px]">
+<div class="flex items-center gap-4 mb-3">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<span class="font-headline font-bold text-lg leading-tight">Lightning Fast Delivery</span>
+</div>
+<p class="text-sm text-on-surface-variant">Your order arrives in an average of 15 minutes across campus.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof Stats -->
+<section class="bg-surface-container-low py-16">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="text-center space-y-2">
+<div class="text-5xl font-headline font-extrabold text-primary">50+</div>
+<div class="text-lg font-bold text-on-background uppercase tracking-wider">Campus Vendors</div>
+</div>
+<div class="text-center space-y-2">
+<div class="text-5xl font-headline font-extrabold text-primary">10k+</div>
+<div class="text-lg font-bold text-on-background uppercase tracking-wider">Hungry Students</div>
+</div>
+<div class="text-center space-y-2">
+<div class="text-5xl font-headline font-extrabold text-primary">5min</div>
+<div class="text-lg font-bold text-on-background uppercase tracking-wider">Avg Delivery</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-32 max-w-7xl mx-auto px-8">
+<div class="text-center mb-20 space-y-4">
+<h2 class="font-headline font-extrabold text-5xl text-on-background">Crave. Click. Consume.</h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto font-medium">Ordering food shouldn't be harder than your finals. We've simplified the journey.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 relative">
+<!-- Step 1 -->
+<div class="relative flex flex-col items-center text-center space-y-6">
+<div class="w-24 h-24 rounded-full bg-surface-container-highest flex items-center justify-center text-primary relative z-10">
+<span class="material-symbols-outlined text-4xl" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center text-xl">1</div>
+</div>
+<h3 class="font-headline font-bold text-2xl">Order</h3>
+<p class="text-on-surface-variant font-medium leading-relaxed px-4">Browse curated campus menus and build your perfect meal in seconds.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col items-center text-center space-y-6">
+<div class="w-24 h-24 rounded-full bg-surface-container-highest flex items-center justify-center text-primary relative z-10">
+<span class="material-symbols-outlined text-4xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center text-xl">2</div>
+</div>
+<h3 class="font-headline font-bold text-2xl">Confirm</h3>
+<p class="text-on-surface-variant font-medium leading-relaxed px-4">Secure checkout with prepaid credits or your student digital wallet.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col items-center text-center space-y-6">
+<div class="w-24 h-24 rounded-full bg-surface-container-highest flex items-center justify-center text-primary relative z-10">
+<span class="material-symbols-outlined text-4xl" data-icon="delivery_dining" style="font-variation-settings: 'FILL' 1;">delivery_dining</span>
+<div class="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center text-xl">3</div>
+</div>
+<h3 class="font-headline font-bold text-2xl">Deliver</h3>
+<p class="text-on-surface-variant font-medium leading-relaxed px-4">Track your Rider in real-time as they navigate the campus straight to you.</p>
+</div>
+</div>
+</section>
+<!-- Three-User Pillar Section (Bento Grid) -->
+<section class="py-24 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
+<!-- Students Pillar -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-10 flex flex-col justify-between min-h-[500px] shadow-sm relative overflow-hidden group">
+<div class="relative z-10">
+<span class="text-primary font-bold uppercase tracking-widest text-sm mb-4 block">For Students</span>
+<h3 class="font-headline font-extrabold text-5xl text-on-background mb-6 leading-tight">Order. Study.<br/>Repeat.</h3>
+<p class="text-on-surface-variant text-lg max-w-md font-medium">Skip the lines and maximize your study time. From midnight snacks to pre-exam feasts, CampusGO keeps you fueled with easy prepaid credits.</p>
+</div>
+<div class="mt-8 relative z-10">
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-bold flex items-center gap-2">
+                                Download App <span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<div class="absolute right-[-10%] bottom-[-5%] w-2/3 opacity-20 group-hover:opacity-100 transition-opacity duration-500">
+<img class="rounded-2xl transform rotate-[-5deg]" data-alt="close-up of a delicious juicy burger with melted cheese and fresh greens on a premium bun against a warm studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADyoRHh3nHnhkXcNr12XSk3xN3lMEdc2nKF647TH4-mkP00HmPvti0Iq6XIT7Le8zhHMVOgLTc014RQQKhKsi6R13YBsZm9BknofeUjFYozpKuGXONYgBEkTeGxsr1GPdyeiwFTK7N4ZqygDyLUro_La_q3r3aJ60KDYJZKcKxp0eIc4cdIcVb6szDWxK4Jqpy6ID8n9fC26uzEbGmYRj_LxPyrDVYYyHJ7cHzI8nIkC3C2M9LtpJv7oAwICmFuh6FP6uB1HIYauo"/>
+</div>
+</div>
+<!-- Vendors Pillar -->
+<div class="lg:col-span-5 bg-primary text-on-primary rounded-xl p-10 flex flex-col justify-between min-h-[500px] shadow-sm overflow-hidden group">
+<div class="relative z-10">
+<span class="text-primary-container font-bold uppercase tracking-widest text-sm mb-4 block">For Vendors</span>
+<h3 class="font-headline font-extrabold text-4xl mb-6">Fuel the<br/>Campus</h3>
+<p class="text-on-primary opacity-90 text-lg font-medium">Reach thousands of hungry students instantly. Manage your store, update menus, and track earnings with our seamless vendor portal.</p>
+</div>
+<div class="mt-8 relative z-10">
+<a href="Vendor two way.html" class="text-inherit no-underline">
+<button class="bg-surface text-primary px-6 py-3 rounded-full font-bold">
+    Partner With Us
+</button>
+</a>
+</div>
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary-container/20 rounded-full blur-3xl"></div>
+</div>
+<!-- Riders Pillar -->
+<div class="lg:col-span-12 bg-on-background text-surface rounded-xl p-10 flex flex-col md:flex-row items-center gap-12 min-h-[400px] shadow-sm group">
+<div class="flex-1 space-y-6">
+<span class="text-primary-container font-bold uppercase tracking-widest text-sm block">For Riders</span>
+<h3 class="font-headline font-extrabold text-5xl">The Campus Hero</h3>
+<p class="text-surface-variant text-xl font-medium max-w-xl">Work on your own terms. Deliver food between classes and earn while you learn. The most flexible side hustle on campus.</p>
+<br>
+<a href="Rider two way.html" class="no-underline">
+<button class="primary-gradient text-on-primary px-8 py-4 rounded-full font-bold">
+    Apply to Ride
+</button>
+</a>
+
+</div>
+<div class="flex-1 w-full flex justify-center">
+<div class="w-full max-w-sm aspect-video bg-surface-container-high/10 rounded-xl flex items-center justify-center p-8 border border-white/10 overflow-hidden">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-700" data-alt="close-up of a professional delivery rider's handlebar with a mobile app showing a navigation map in a sunlit modern campus setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs1iI2ZL5arzL2SvkQw_T5HSLSctBy2nTefzXKS7Cw4_FHm04HjYyABoRuHWruP7Fo018G3guvbfXftWsnAPhVxq-x4uaCDHN0UOoKt8oYR1kWVFdOKpoqqtJAemLX8iChY_nw_y-q_LjTIJskmLscLxvRRI3svSQDOd113wN8ZtaaNttaiiQsuNEiNozWChfgKyVnSpGcZbQAj-F90Gga_mX0ubewnpC50Z9YquFjLMPcp3BW0nbSOY2S3rSKuPWlTWPMyGjG3Qo"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- App Showcase Section -->
+<section class="py-32 overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="space-y-12">
+<div class="space-y-6">
+<h2 class="font-headline font-extrabold text-5xl leading-tight">One App.<br/>Three Experiences.</h2>
+<p class="text-xl text-on-surface-variant font-medium">Whether you're ordering, cooking, or riding, the CampusGO app is designed for peak efficiency in the campus ecosystem.</p>
+</div>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex shrink-0 items-center justify-center text-primary">
+<span class="material-symbols-outlined">smartphone</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Intuitive UX</h4>
+<p class="text-on-surface-variant">Clean, modern interface designed for the fast-paced student lifestyle.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex shrink-0 items-center justify-center text-primary">
+<span class="material-symbols-outlined">credit_card</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Integrated Payments</h4>
+<p class="text-on-surface-variant">Pay with credits, digital wallets, or standard campus payment cards.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="inline-block transition-transform hover:scale-105 active:scale-95" href="#">
+<img alt="App Store" class="h-14" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCozX__ZXkYUtQs270tCLGp4jRhuOxg5Se7Rv6BcebgQNz3P3UfZYhLLhwiFn9Y0zK95WedU9iLkXdr693J31ZFf7thKexCKqRyJVFj4OFX1pmGZ4H299kdjXZ7O-R-PqyCMmxyNC85gaw73YnBF6HZ2HriCWX68XL2qnyerOAsv4xudRgS8Cx7db3hfFdU72nr5sKA1FxSEr8kL6DWmnxD0TfxXHuTYplmjCNgvtxU-o9NL8DDb3u1-obQU2gsij7CtpixM3jmrIU"/>
+</a>
+<a class="inline-block transition-transform hover:scale-105 active:scale-95" href="#">
+<img alt="Google Play" class="h-14" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5KX9kBl8DsUVNvL-qQ-ExCNcvo7GIyju9uawQSlPzx7Z76zGVpDZoIwkVbPpq6AptzF3XD42xE4LPYFVgfFHSqcM1PqNX7VXONC64FUX2lu8EZoeE4PzNz9HsBn9MCbSgqWQH65ZOQu6zDzSSJ0eciCzOTCOO8K6XVZKKr1PVRKHYMKQs_a4hTl0DhNSXGJAC-KbCzV02iOHpse1YBrtSvSdPDxuX7-HHvSFBMOIN06y-krC9gKMf_0h1gWDclUsw76tpKi0xBaY"/>
+</a>
+</div>
+</div>
+<div class="relative">
+<!-- Simulated App Mockups -->
+<div class="flex items-center justify-center gap-8">
+<div class="w-[280px] h-[580px] bg-on-background rounded-[3rem] p-3 shadow-2xl relative z-20">
+<div class="bg-surface w-full h-full rounded-[2.5rem] overflow-hidden relative">
+<div class="absolute top-0 w-full h-6 bg-on-background flex justify-center items-end pb-1">
+<div class="w-20 h-4 bg-on-background rounded-b-xl"></div>
+</div>
+<img class="w-full h-full object-cover" data-alt="screenshot of a modern mobile app food delivery interface showing delicious colorful salads and quick checkout buttons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDdWy-yZU9ODC9oi0b2mT7slIZzAhl1U6yqCLK1urSvZMqTGJ-4CUTEt1IfPntLZshL2zRJDfdR1axcIzFV6D3AsJWYoBgcQGG6TOMw9gYjHcpcsYIQES8pVgh8iOXwVgFXiTYHziM8OyaXn3hk7TkSGZZntYtcUNo0zADJB1BmXrUrd1Q-djZTxakBs6N4i8aYP62kNPGEQFwbJno4AWvZzf9aXWxKbqW1lnVd3ihhn5VJjoAB1PEdOpx93HtRakecPVHaWnGZTA"/>
+</div>
+</div>
+<div class="hidden md:block w-[280px] h-[580px] bg-on-background rounded-[3rem] p-3 shadow-2xl mt-24 opacity-80">
+<div class="bg-surface w-full h-full rounded-[2.5rem] overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="mobile app interface showing a dashboard for restaurant sales with vibrant analytics charts and order lists" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9sjyXNR6zFgTkiBPhNPlYmAkh1woTIUtSXMAP5J4-ufUPsOgb2a5yqCSOUqnsiuoCv-VaI9zgjYMGEOB_uTJC09t9WFUuG8fJInNsfGo_1EiQh4CBEd-3dmmyejbxWPhD6i6vGZKTt5b_qPZNAfG9AlnxzOgCvRkdqS5UYMtz_dcx1-p-OMdPjWJQHv98gG3Gmq0euU5JcJW796RsIler7UJxkyvTScSzay5AI1uC1kqVwvkoxOasm6_9ML6UKyHsC-XgUaxciU4"/>
+</div>
+</div>
+</div>
+<!-- Background Blobs -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary-container/10 rounded-full blur-[120px] -z-10"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-[#ffedeb] dark:bg-[#2d1210] rounded-t-[2rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold text-[#4e2120] dark:text-[#efdfde] font-headline">
+                    CampusGO
+                </div>
+<p class="text-[#4e2120] dark:text-[#efdfde] opacity-80 font-body">
+                    Empowering campus communities through the kinetic energy of food. Join the revolution in student dining.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#ab2d00] hover:scale-110 cursor-pointer transition-transform">social_leaderboard</span>
+<span class="material-symbols-outlined text-[#ab2d00] hover:scale-110 cursor-pointer transition-transform">retweet</span>
+<span class="material-symbols-outlined text-[#ab2d00] hover:scale-110 cursor-pointer transition-transform">retweet</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<h4 class="font-bold text-[#4e2120] dark:text-[#efdfde]">Platform</h4>
+<ul class="space-y-2 font-['Inter'] text-sm font-medium">
+<li><a class="text-[#4e2120] dark:text-[#efdfde] opacity-80 hover:opacity-100 hover:underline decoration-[#ab2d00] underline-offset-4 transition-all" href="#">About Us</a></li>
+<li><a class="text-[#4e2120] dark:text-[#efdfde] opacity-80 hover:opacity-100 hover:underline decoration-[#ab2d00] underline-offset-4 transition-all" href="#">Our Story</a></li>
+<li><a class="text-[#4e2120] dark:text-[#efdfde] opacity-80 hover:opacity-100 hover:underline decoration-[#ab2d00] underline-offset-4 transition-all" href="#">Support</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-[#4e2120] dark:text-[#efdfde]">Legal</h4>
+<ul class="space-y-2 font-['Inter'] text-sm font-medium">
+<li><a class="text-[#4e2120] dark:text-[#efdfde] opacity-80 hover:opacity-100 hover:underline decoration-[#ab2d00] underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-[#4e2120] dark:text-[#efdfde] opacity-80 hover:opacity-100 hover:underline decoration-[#ab2d00] underline-offset-4 transition-all" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-[#4e2120] dark:text-[#efdfde]">Subscribe to CampusGO</h4>
+<div class="flex flex-col gap-3">
+<input class="bg-white/50 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary outline-none" placeholder="Your campus email" type="email"/>
+<button class="primary-gradient text-white font-bold py-3 rounded-xl">Subscribe</button>
+</div>
+<p class="text-xs text-[#4e2120] dark:text-[#efdfde] opacity-60">
+                    © 2026 CampusGO. The Kinetic Hearth.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

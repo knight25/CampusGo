@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CampusGo Rider Portal</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus_Jakarta_Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#ab2d00",
+              "on-tertiary-fixed": "#360049",
+              "primary-fixed-dim": "#ff5d2c",
+              "on-primary-fixed-variant": "#581200",
+              "on-secondary-container": "#4d5163",
+              "secondary-dim": "#4b4f61",
+              "background": "#fff4f3",
+              "secondary-fixed": "#dee1f8",
+              "primary": "#ab2d00",
+              "on-primary-container": "#480d00",
+              "on-surface": "#4e2120",
+              "primary-dim": "#962600",
+              "on-secondary": "#f2f2ff",
+              "tertiary": "#833e9a",
+              "on-tertiary-container": "#570e70",
+              "secondary-fixed-dim": "#d0d3e9",
+              "surface-container-highest": "#ffd2d0",
+              "error-container": "#fb5151",
+              "surface-bright": "#fff4f3",
+              "outline": "#a26765",
+              "primary-fixed": "#ff7851",
+              "tertiary-container": "#e699fd",
+              "surface-variant": "#ffd2d0",
+              "tertiary-fixed": "#e699fd",
+              "surface-dim": "#ffc7c4",
+              "on-tertiary-fixed-variant": "#611b79",
+              "on-secondary-fixed": "#3b3f50",
+              "surface-container-high": "#ffdad8",
+              "secondary": "#575b6d",
+              "primary-container": "#ff7851",
+              "error": "#b31b25",
+              "surface-container": "#ffe1e0",
+              "surface": "#fff4f3",
+              "on-secondary-fixed-variant": "#575b6d",
+              "outline-variant": "#e09c99",
+              "on-error-container": "#570008",
+              "tertiary-dim": "#75318d",
+              "inverse-primary": "#ff5622",
+              "on-surface-variant": "#834c4b",
+              "on-background": "#4e2120",
+              "inverse-surface": "#240304",
+              "inverse-on-surface": "#ce8c89",
+              "secondary-container": "#dee1f8",
+              "on-error": "#ffefee",
+              "tertiary-fixed-dim": "#d78cee",
+              "error-dim": "#9f0519",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffedfe",
+              "on-primary-fixed": "#000000",
+              "on-primary": "#ffefec",
+              "surface-container-low": "#ffedeb"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fff4f3;
+      }
+      .editorial-title {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        letter-spacing: -0.02em;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-[#fff4f3] dark:bg-[#1a0f0e] docked full-width top-0 sticky z-50 shadow-none">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-black text-[#ab2d00] tracking-tighter editorial-title">CampusGo</span>
+<span class="bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider ml-1">Rider</span>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex items-center justify-center px-6 py-12">
+<div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Welcome Back Card -->
+<div class="bg-surface-container-lowest p-8 rounded-[24px] flex flex-col items-center text-center group transition-all duration-300 hover:translate-y-[-4px]">
+<div class="w-20 h-20 bg-surface-container-low rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="delivery_dining">delivery_dining</span>
+</div>
+<h2 class="editorial-title text-2xl font-bold text-on-surface mb-3">Welcome Back</h2>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Ready for your next shift? Log in to view available deliveries and track your earnings.</p>
+<a href="Rider sign-in.html" class="no-underline">
+<button class="w-full py-4 px-6 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-full font-headline font-bold text-lg flex items-center justify-center gap-2 active:scale-95 transition-transform shadow-lg shadow-primary/10">
+                    Sign In
+                    <span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</a>
+</div>
+<!-- New to CampusGo Card -->
+<div class="bg-surface-container-low p-8 rounded-[24px] flex flex-col items-center text-center transition-all duration-300 hover:translate-y-[-4px]">
+<div class="relative w-full h-40 mb-8 overflow-hidden rounded-xl">
+<img alt="Smiling campus courier" class="w-full h-full object-cover" data-alt="Young energetic college student with a bicycle and delivery backpack smiling in a sunny campus courtyard environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA46fXFqdkDZcrhebN4mpIhQXjPfTOgPK9_dcxqlQlqW7cLE6IdNHDv-Zkm51fnzrOHK61LwtanWhZZUVBCat-AAFyKtaXWWZ1DRTrhp8fWGOF2r5rDfiZEwP_3SEIG-qDbs3t3N440LJ8RCD7GhmHFKFFib_K3EwT-fBm4oAJfDWf7Xih1Y_toAhyfDqetMX38HJpd9kzdKJF199rEh1l0ND_IjSUiuqmIBkurXE4s8IyzfevkydChvYHGvj6sclB_NQgeZBEfQvI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent opacity-60"></div>
+</div>
+<h2 class="editorial-title text-2xl font-bold text-on-surface mb-3">New to CampusGo?</h2>
+<a href="Rider sign-up.html" class="no-underline">
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">Join the fastest growing campus fleet. Flexible hours, great pay, and total independence.</p>
+<button class="w-full py-4 px-6 bg-on-surface text-surface rounded-full font-headline font-bold text-lg flex items-center justify-center gap-2 active:scale-95 transition-transform shadow-lg shadow-on-surface/5">
+                    Join the Fleet
+                    <span class="material-symbols-outlined text-xl" data-icon="add_circle">add_circle</span>
+</button>
+</a>
+<div class="mt-6 flex items-center gap-2 text-sm font-medium text-on-surface-variant">
+<span class="material-symbols-outlined text-base" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  Apply in 5 minutes
+                </div>
+</div>
+</div>
+</main>
+<!-- Minimalist Footer -->
+<footer class="w-full max-w-screen-2xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-on-surface-variant text-sm gap-4">
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Requirements</a>
+<a class="hover:text-primary transition-colors" href="#">Safety Guide</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+<p>© 2026 CampusGo Technology Inc.</p>
+</footer>
+<!-- Background Decoration -->
+<div class="fixed top-[-10%] right-[-5%] w-[40%] h-[40%] bg-surface-container-high rounded-full blur-[120px] -z-10 opacity-50"></div>
+<div class="fixed bottom-[-10%] left-[-5%] w-[30%] h-[30%] bg-primary-container rounded-full blur-[100px] -z-10 opacity-20"></div>
+</body></html>

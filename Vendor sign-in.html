@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vendor Portal | CampusGo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#581200",
+              "on-secondary-container": "#4d5163",
+              "background": "#fff4f3",
+              "secondary-dim": "#4b4f61",
+              "on-tertiary-fixed": "#360049",
+              "surface-tint": "#ab2d00",
+              "primary-fixed-dim": "#ff5d2c",
+              "primary-dim": "#962600",
+              "on-secondary": "#f2f2ff",
+              "tertiary": "#833e9a",
+              "on-tertiary-container": "#570e70",
+              "secondary-fixed": "#dee1f8",
+              "on-primary-container": "#480d00",
+              "on-surface": "#4e2120",
+              "primary": "#ab2d00",
+              "error-container": "#fb5151",
+              "surface-bright": "#fff4f3",
+              "secondary-fixed-dim": "#d0d3e9",
+              "surface-container-highest": "#ffd2d0",
+              "tertiary-fixed": "#e699fd",
+              "surface-dim": "#ffc7c4",
+              "tertiary-container": "#e699fd",
+              "surface-variant": "#ffd2d0",
+              "outline": "#a26765",
+              "primary-fixed": "#ff7851",
+              "surface": "#fff4f3",
+              "surface-container": "#ffe1e0",
+              "on-secondary-fixed-variant": "#575b6d",
+              "on-secondary-fixed": "#3b3f50",
+              "surface-container-high": "#ffdad8",
+              "secondary": "#575b6d",
+              "primary-container": "#ff7851",
+              "on-tertiary-fixed-variant": "#611b79",
+              "error": "#b31b25",
+              "on-surface-variant": "#834c4b",
+              "tertiary-dim": "#75318d",
+              "outline-variant": "#e09c99",
+              "on-error-container": "#570008",
+              "inverse-primary": "#ff5622",
+              "on-error": "#ffefee",
+              "inverse-on-surface": "#ce8c89",
+              "on-background": "#4e2120",
+              "inverse-surface": "#240304",
+              "secondary-container": "#dee1f8",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffedfe",
+              "on-primary-fixed": "#000000",
+              "on-primary": "#ffefec",
+              "surface-container-low": "#ffedeb",
+              "tertiary-fixed-dim": "#d78cee",
+              "error-dim": "#9f0519"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 244, 243, 0.8);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #ab2d00 0%, #ff7851 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Anchor (Suppressed Shell Rule Applied: This is a Transactional Page, but keeping Brand Identity) -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md">
+<div class="flex justify-between items-center h-16 px-6 w-full max-w-screen-xl mx-auto">
+<div class="text-2xl font-black text-primary tracking-tighter font-headline">
+                CampusGo
+                <span class="bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider ml-1">vendor</span>
+            </div>
+
+</div>
+</header>
+<main class="min-h-screen pt-16 flex items-center justify-center relative overflow-hidden">
+<!-- Background Elements -->
+<div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+<div class="absolute top-[-10%] right-[-5%] w-[40rem] h-[40rem] rounded-full bg-primary-container blur-[120px]"></div>
+<div class="absolute bottom-[-10%] left-[-5%] w-[35rem] h-[35rem] rounded-full bg-tertiary-container blur-[120px]"></div>
+</div>
+<div class="container mx-auto px-4 z-10 py-12">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Brand/Visual Side -->
+<div class="hidden lg:block space-y-8">
+<div class="space-y-4">
+<span class="inline-block py-1 px-3 bg-primary-container/20 text-primary font-bold rounded-full text-xs uppercase tracking-widest font-headline">
+                            Vendor Portal
+                        </span>
+<h1 class="text-5xl font-black text-on-surface leading-[1.1] font-headline tracking-tight">
+                            Powering the <span class="text-primary">Campus Pulse</span> together.
+                        </h1>
+<p class="text-xl text-on-surface-variant font-medium max-w-md">
+                            Join hundreds of vendors serving thousands of hungry students every single day.
+                        </p>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container/10 rounded-[2rem] blur-2xl group-hover:bg-primary-container/20 transition-all duration-500"></div>
+<img class="relative rounded-[1.5rem] w-full aspect-[4/3] object-cover shadow-2xl border-4 border-surface" data-alt="Modern professional kitchen interior with clean stainless steel surfaces and warm ambient lighting, business-oriented culinary environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmP_7ehfGLL3pISOIiPs1lNZAJ1oIjmVylJ1_Dm__jb0FBPyVzS65ok5mB2jdhkhBvyWc-5nHeTDEG5PMVTqnLkQvGbzWzqg6oj46knBFo67EdBNXfkENkvl1WczRYesf0nWRitdwDuc-hXgdgQWwF1bcnYcLVZq4iQVZoyTPGU9Aky-O6lBBzdWE3vIvu2VSA3gcm4fyULpym6QJJqFyHBMr6Itqmu7iQekVrC8JhxBYO5MQkkOga_wkYcvyW4Z9Z9QKVL5dJ15E"/>
+</div>
+</div>
+<!-- Functional Side: The Tabs & Form -->
+<div class="w-full max-w-md mx-auto">
+<div class="bg-surface-container-lowest rounded-[2rem] shadow-[0_32px_64px_-12px_rgba(78,33,32,0.08)] overflow-hidden">
+
+<!-- Sign In View (Default) -->
+<div class="p-8 pt-6 space-y-6">
+<div class="text-center space-y-1">
+<h2 class="text-2xl font-bold font-headline text-on-surface">Welcome back</h2>
+<p class="text-sm text-on-surface-variant">Access your vendor dashboard</p>
+</div>
+<form class="space-y-4">
+<div class="space-y-1.5">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Manager Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">mail</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest text-sm transition-all placeholder:text-on-surface-variant/50" placeholder="manager@campusgo.com" type="email"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider ml-1">Store ID</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">storefront</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest text-sm transition-all placeholder:text-on-surface-variant/50" placeholder="CG-123456" type="text"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center ml-1">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Password</label>
+<a class="text-[11px] font-bold text-primary hover:underline" href="#">Forgot?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">lock</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest text-sm transition-all placeholder:text-on-surface-variant/50" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<button class="w-full py-4 kinetic-gradient text-on-primary font-bold rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all mt-4 font-headline text-lg" type="submit">
+                                    Launch Dashboard
+                                </button>
+</form>
+<div class="pt-4 flex items-center justify-center gap-2">
+<span class="h-px bg-outline-variant/30 flex-1"></span>
+<span class="text-[11px] font-bold text-on-surface-variant/60 uppercase tracking-widest px-2">Secure Merchant Login</span>
+<span class="h-px bg-outline-variant/30 flex-1"></span>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div class="flex flex-col items-center p-3 rounded-xl bg-surface-container-low/50">
+<span class="material-symbols-outlined text-primary mb-1 text-[20px]">bolt</span>
+<span class="text-[10px] font-bold text-on-surface-variant">Fast</span>
+</div>
+<div class="flex flex-col items-center p-3 rounded-xl bg-surface-container-low/50">
+<span class="material-symbols-outlined text-primary mb-1 text-[20px]">verified_user</span>
+<span class="text-[10px] font-bold text-on-surface-variant">Secure</span>
+</div>
+<div class="flex flex-col items-center p-3 rounded-xl bg-surface-container-low/50">
+<span class="material-symbols-outlined text-primary mb-1 text-[20px]">query_stats</span>
+<span class="text-[10px] font-bold text-on-surface-variant">Analytics</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Helper -->
+
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Identity -->
+<footer class="py-8 bg-surface-container-low/30 mt-auto">
+<div class="max-w-screen-xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="text-lg font-black text-primary/40 font-headline tracking-tighter">CampusGo</span>
+<span class="text-xs font-medium text-on-surface-variant/40">© 2026 Vendor Portal. All rights reserved.</span>
+</div>
+<div class="flex gap-6">
+<a class="text-xs font-bold text-on-surface-variant/50 hover:text-primary transition-colors uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-xs font-bold text-on-surface-variant/50 hover:text-primary transition-colors uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="text-xs font-bold text-on-surface-variant/50 hover:text-primary transition-colors uppercase tracking-widest" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>

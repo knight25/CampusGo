@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CampusGo | Rider Access</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#581200",
+              "on-secondary-container": "#4d5163",
+              "background": "#fff4f3",
+              "secondary-dim": "#4b4f61",
+              "on-tertiary-fixed": "#360049",
+              "surface-tint": "#ab2d00",
+              "primary-fixed-dim": "#ff5d2c",
+              "primary-dim": "#962600",
+              "on-secondary": "#f2f2ff",
+              "tertiary": "#833e9a",
+              "on-tertiary-container": "#570e70",
+              "secondary-fixed": "#dee1f8",
+              "on-primary-container": "#480d00",
+              "on-surface": "#4e2120",
+              "primary": "#ab2d00",
+              "error-container": "#fb5151",
+              "surface-bright": "#fff4f3",
+              "secondary-fixed-dim": "#d0d3e9",
+              "surface-container-highest": "#ffd2d0",
+              "tertiary-fixed": "#e699fd",
+              "surface-dim": "#ffc7c4",
+              "tertiary-container": "#e699fd",
+              "surface-variant": "#ffd2d0",
+              "outline": "#a26765",
+              "primary-fixed": "#ff7851",
+              "surface": "#fff4f3",
+              "surface-container": "#ffe1e0",
+              "on-secondary-fixed-variant": "#575b6d",
+              "on-secondary-fixed": "#3b3f50",
+              "surface-container-high": "#ffdad8",
+              "secondary": "#575b6d",
+              "primary-container": "#ff7851",
+              "on-tertiary-fixed-variant": "#611b79",
+              "error": "#b31b25",
+              "on-surface-variant": "#834c4b",
+              "tertiary-dim": "#75318d",
+              "outline-variant": "#e09c99",
+              "on-error-container": "#570008",
+              "inverse-primary": "#ff5622",
+              "on-error": "#ffefee",
+              "inverse-on-surface": "#ce8c89",
+              "on-background": "#4e2120",
+              "inverse-surface": "#240304",
+              "secondary-container": "#dee1f8",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffedfe",
+              "on-primary-fixed": "#000000",
+              "on-primary": "#ffefec",
+              "surface-container-low": "#ffedeb",
+              "tertiary-fixed-dim": "#d78cee",
+              "error-dim": "#9f0519"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+      }
+      .kinetic-gradient {
+        background: linear-gradient(135deg, #ab2d00 0%, #ff7851 100%);
+      }
+      input:focus, select:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(171, 45, 0, 0.15);
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, .brand-logo {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar Shell (Suppressed Nav for Transactional Focus) -->
+<header class="fixed top-0 w-full z-50 no-border bg-background">
+<div class="flex justify-between items-center h-16 px-6 w-full max-w-screen-xl mx-auto">
+<div class="brand-logo text-2xl font-black text-primary tracking-tighter">
+  <span class="text-2xl font-black text-[#ab2d00] tracking-tighter editorial-title">CampusGo</span>
+  <span class="bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider ml-1">Rider</span>
+</div>
+
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center px-4 pt-20 pb-12 relative overflow-hidden">
+<!-- Background Editorial Element -->
+<div class="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
+<img alt="dynamic cyclist riding through campus" class="w-full h-full object-cover opacity-90 mix-blend-multiply grayscale-[20%]" data-alt="dynamic close-up of a courier on a bicycle riding through a modern college campus with sun flares and motion blur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm2o717TLWf5057XoVlAkC2RV_Qp-95LBVjQA6FBh-ZUcajiC04J2MZZewEmBy2PZewGN7jiRtPZ42aipjw1VV-qymwJLQd81J2LYEqrjLOBNp-t0jNIdLw3eMtUJMsOt4PuV6qgKCj0jPswJpP1ZeQ_56F-scBgk6b7AglXPK_rcPw7ehQM17wJltUfJgPKoAbvTvWxoZEgGjrkbUIrgp3GQbhZjFs_dMESSE-Clsr5XRDELlFnP-x2e0azjvBGk6KvOMNNswXJo"/>
+</div>
+<div class="w-full max-w-xl z-10 lg:ml-[-25%]">
+<!-- Central Auth Card -->
+<div class="glass-card rounded-[2rem] shadow-[32px_0_64px_-20px_rgba(78,33,32,0.12)] p-8 md:p-12 border border-white/40">
+<div class="mb-10">
+<h1 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">The Kinetic Hearth</h1>
+<p class="text-on-surface-variant font-medium">Fueled by flavor. Driven by you.</p>
+</div>
+<!-- Form Section (Default: Sign In View) -->
+<form class="space-y-6">
+<!-- Sign In Fields -->
+<div class="space-y-4">
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Rider Email</label>
+<input class="w-full px-5 py-4 bg-surface-container-low border-none rounded-xl text-on-surface placeholder:text-outline/60 focus:bg-surface-container-lowest transition-colors" placeholder="rider@campusgo.edu" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Password</label>
+<input class="w-full px-5 py-4 bg-surface-container-low border-none rounded-xl text-on-surface placeholder:text-outline/60 focus:bg-surface-container-lowest transition-colors" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<div class="flex justify-between items-center text-sm px-1">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded border-outline-variant text-primary focus:ring-primary/20" type="checkbox"/>
+<span class="text-on-surface-variant">Remember me</span>
+</label>
+<a class="text-primary font-bold hover:underline" href="#">Forgot Password ?</a>
+</div>
+<!-- CTA Button -->
+<button class="kinetic-gradient w-full py-5 rounded-full text-white font-bold text-lg shadow-xl shadow-primary/20 flex items-center justify-center gap-2 group hover:scale-[1.02] active:scale-[0.98] transition-transform" type="submit">
+<span>Ignite the Ride</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+<!-- Editorial Layout Spacer for Join Fleet (Hidden by default in logic but shown for structure) -->
+<div class="hidden mt-10 space-y-6">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Name</label>
+<input class="w-full px-5 py-4 bg-surface-container-low border-none rounded-xl" placeholder="Alex Swift" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-1">Vehicle</label>
+<select class="w-full px-5 py-4 bg-surface-container-low border-none rounded-xl appearance-none text-on-surface">
+<option>Bicycle</option>
+<option>E-Bike</option>
+<option>Scooter</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Subtle Trust Signal -->
+<div class="mt-12 pt-8 border-t border-outline-variant/20 flex items-center justify-between">
+<div class="flex -space-x-3">
+<img alt="rider avatar" class="w-10 h-10 rounded-full border-4 border-surface-container-lowest object-cover" data-alt="profile portrait of a smiling rider" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq1vBshVffpzMhR9px89565OCFbKlz4wRPqn71OBHByKf-vx5R5TtMFIwesxxu5oEA2ZvizFxMM-0u6Ty4LqRySlvzI3RYU8FcR7UF9TFx7x5SHoWtJWq76FeMXfNtMw6B4_URhU-ciVdxj1bdH9C-7nqHzyCDEbVuY1LBO8NBW6FwFhgkQdYX6g4klXUnjYksbvPbn1IREzss3iNyzbO3_Xv5_lAL285-k1GcK-v4WeR5J1md40WoxKFOItMQkFiiFwFpYXcamUw"/>
+<img alt="rider avatar" class="w-10 h-10 rounded-full border-4 border-surface-container-lowest object-cover" data-alt="profile portrait of a student rider" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcC6Xgr7K8uNYLjtKQVu_jiMthzXyDWiIEl-zWaLgUhN1KzGt_Q7yRsr6rrt8qvi9DZeeZ2Yv-cQ4KFlnmxq5Mw7pNlJsMGaQbZRbBoWOTZWWazhj3ZB65yfG42zrPUoI8PeJglT9-CyDxsqIqvRglD0W06ydPMYDdN_CKI1tt2ULzFf0L3LgCUcNvAetUh9dqq7vJxBonIKdeWXYf6MK3GcOgJy2RKVXNY3GNLRdXlSXFEgIH7derj8kmo3fUtwjlGLAsewJ1K8s"/>
+<div class="w-10 h-10 rounded-full border-4 border-surface-container-lowest bg-primary-container text-[10px] font-black flex items-center justify-center text-on-primary-container">
+                            5+
+                        </div>
+</div>
+<p class="text-[10px] uppercase tracking-tighter font-black text-outline">Active on campus today</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer for Legal Focus -->
+<footer class="py-8 px-6 text-center text-xs text-on-surface-variant/60 font-medium">
+<div class="flex justify-center gap-8 mb-4">
+<a class="hover:text-primary transition-colors" href="#">Privacy Charter</a>
+<a class="hover:text-primary transition-colors" href="#">Fleet Standards</a>
+<a class="hover:text-primary transition-colors" href="#">Safety Portal</a>
+</div>
+<p>© 2026 CampusGo Technologies. Built for the Pulse.</p>
+</footer>
+<!-- SideNavBar (Suppressed for focused Transactional screen) -->
+<!-- BottomNavBar (Suppressed for focused Transactional screen) -->
+</body></html>
