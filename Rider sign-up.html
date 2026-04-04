@@ -142,13 +142,13 @@
 <h2 class="text-3xl font-headline font-extrabold text-on-surface tracking-tight mb-2">Rider Registration</h2>
 <p class="text-on-surface-variant">Start your journey as a CampusGo partner today.</p>
 </header>
-<form class="space-y-6">
+<form class="space-y-6" id="registrationForm">
 <!-- Full Name -->
 <div class="space-y-2">
 <label class="text-sm font-bold text-on-surface px-1">Full Name</label>
 <div class="relative flex items-center">
 <span class="material-symbols-outlined absolute left-4 text-on-surface-variant" data-icon="person">person</span>
-<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none text-on-surface" placeholder="Alex Rivers" type="text"/>
+<input id="fullName" class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none text-on-surface" placeholder="Alex Rivers" type="text"/>
 </div>
 </div>
 <!-- Email -->
@@ -156,7 +156,7 @@
 <label class="text-sm font-bold text-on-surface px-1">University Email (.edu)</label>
 <div class="relative flex items-center">
 <span class="material-symbols-outlined absolute left-4 text-on-surface-variant" data-icon="school">school</span>
-<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none text-on-surface" placeholder="alex@university.edu" type="email"/>
+<input id="email" class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none text-on-surface" placeholder="alex@university.edu" type="email"/>
 </div>
 </div>
 <!-- 2-Column Grid: ID & Phone -->
@@ -165,14 +165,14 @@
 <label class="text-sm font-bold text-on-surface px-1">Student ID Number</label>
 <div class="relative flex items-center">
 <span class="material-symbols-outlined absolute left-4 text-on-surface-variant" data-icon="badge">badge</span>
-<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none text-on-surface" placeholder="ID-882910" type="text"/>
+<input id="student_id" class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none text-on-surface" placeholder="ID-882910" type="text"/>
 </div>
 </div>
 <div class="space-y-2">
 <label class="text-sm font-bold text-on-surface px-1">Phone Number</label>
 <div class="relative flex items-center">
 <span class="material-symbols-outlined absolute left-4 text-on-surface-variant" data-icon="phone">phone</span>
-<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none text-on-surface" placeholder="(555) 000-0000" type="tel"/>
+<input id="phone" class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none text-on-surface" placeholder="(555) 000-0000" type="tel"/>
 </div>
 </div>
 </div>
@@ -181,7 +181,7 @@
 <label class="text-sm font-bold text-on-surface px-1">Vehicle Type</label>
 <div class="relative flex items-center">
 <span class="material-symbols-outlined absolute left-4 text-on-surface-variant" data-icon="directions_bike">directions_bike</span>
-<select class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none appearance-none text-on-surface">
+<select id="vehicleType" class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none appearance-none text-on-surface">
 <option>Bicycle</option>
 <option>E-bike</option>
 <option>Scooter</option>
@@ -195,7 +195,7 @@
 <label class="text-sm font-bold text-on-surface px-1">Create Password</label>
 <div class="relative flex items-center">
 <span class="material-symbols-outlined absolute left-4 text-on-surface-variant" data-icon="lock">lock</span>
-<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none text-on-surface" placeholder="••••••••" type="password"/>
+<input id="password" class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none text-on-surface" placeholder="••••••••" type="password"/>
 </div>
 </div>
 <!-- CTA -->
@@ -233,4 +233,76 @@
 </div>
 </div>
 </footer>
-</body></html>
+
+<script>
+  // 1. CONFIGURATION
+  // Replace the URL below with your actual Render service URL
+  const API_URL = 'https://campusgo-backend-nfsw.onrender.com'; 
+
+  // 2. SELECT ELEMENTS
+  const registrationForm = document.querySelector('form');
+  const submitBtn = registrationForm.querySelector('button[type="submit"]');
+
+  // 3. HANDLE FORM SUBMISSION
+  registrationForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Collect data from the inputs based on your HTML structure
+    const fullName = registrationForm.querySelector('input[placeholder="Alex Rivers"]').value;
+    const email = registrationForm.querySelector('input[type="email"]').value;
+    const studentId = registrationForm.querySelector('input[placeholder="ID-882910"]').value;
+    const phone = registrationForm.querySelector('input[type="tel"]').value;
+    const vehicle = registrationForm.querySelector('select').value;
+    const password = registrationForm.querySelector('input[type="password"]').value;
+
+    // 4. FRONTEND VALIDATION
+    
+
+    if (password.length < 6) {
+      alert("⚠️ Password too short. Use at least 6 characters.");
+      return;
+    }
+
+    // 5. VISUAL FEEDBACK
+    const originalBtnText = submitBtn.innerText;
+    submitBtn.innerText = "Verifying Student Status...";
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = "0.7";
+
+    try {
+      // 6. API CALL TO RENDER
+      const response = await fetch(`${API_URL}/rider/signup`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          full_name: fullName,
+          email: email,
+          student_id: studentId,
+          phone: phone,
+          vehicle: vehicle,
+          password: password
+        })
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert("🎉 Registration Successful! Please check your university email inbox for a verification link.");
+        registrationForm.reset();
+      } else {
+        alert("❌ Registration Error: " + (result.message || result.error || "Failed to connect."));
+      }
+    } catch (error) {
+      console.error("Connection Error:", error);
+      alert("🌐 Server Offline: Your Render backend might be sleeping. Please wait 30 seconds and try again.");
+    } finally {
+      // 7. RESET BUTTON
+      submitBtn.innerText = originalBtnText;
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = "1";
+    }
+  });
+</script>
+
+</body>
+</html>
