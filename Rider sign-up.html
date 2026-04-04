@@ -182,10 +182,10 @@
 <div class="relative flex items-center">
 <span class="material-symbols-outlined absolute left-4 text-on-surface-variant" data-icon="directions_bike">directions_bike</span>
 <select id="vehicleType" class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all outline-none appearance-none text-on-surface">
-<option>Bicycle</option>
-<option>E-bike</option>
-<option>Scooter</option>
-<option>Walking</option>
+<option value="Bicycle">Bicycle</option>
+<option value="E-bike">E-bike</option>
+<option value="Scooter">Scooter</option>
+<option value="Walking">Walking</option>
 </select>
 <span class="material-symbols-outlined absolute right-4 pointer-events-none text-on-surface-variant" data-icon="expand_more">expand_more</span>
 </div>
@@ -248,12 +248,12 @@
     e.preventDefault();
 
     // Collect data from the inputs based on your HTML structure
-    const fullName = registrationForm.querySelector('input[placeholder="Alex Rivers"]').value;
-    const email = registrationForm.querySelector('input[type="email"]').value;
-    const studentId = registrationForm.querySelector('input[placeholder="ID-882910"]').value;
-    const phone = registrationForm.querySelector('input[type="tel"]').value;
-    const vehicle = registrationForm.querySelector('select').value;
-    const password = registrationForm.querySelector('input[type="password"]').value;
+const fullName = registrationForm.querySelector('input[placeholder="Alex Rivers"]').value;
+const email = registrationForm.querySelector('input[type="email"]').value;
+const studentId = registrationForm.querySelector('input[name="student_id"]')?.value || registrationForm.querySelectorAll('input[type="text"]')[1].value;
+const phone = registrationForm.querySelector('input[type="tel"]').value;
+const vehicle = registrationForm.querySelector('select').value; // Grabs the selected option
+const password = registrationForm.querySelector('input[type="password"]').value;
 
     // 4. FRONTEND VALIDATION
     
